@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+    {% load static %}
+<head lang="es">
+  <!--Metadatos-->
+  <meta charset="utf-8">
+  <meta name="author" content="Rafael Zuleta">
+  <meta name="description" content="Portafolio de desarrollo de Rafael Zuleta">
+  <meta name="keywords" content="HTML, CSS, Javascript, Django, Python">
+  <meta name="viewport" content="width = device-width, initial-scale=1">
+
+  <!--Titulo de pagina-->
+  <title>Rafael Zuleta | Full stack developer</title>
+
+  <!--favicon-->
+  <link href="{% static 'img/panda.jpg' %}" rel="icon" type="image/x-icon">
+
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+  <!--BOOTSTRAP ICON-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <!--CSS-->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <!-- barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'img/panda.jpg' %}" width="50" alt="Logo de pagina" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav d-flex justify-content-center align-items-center ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch"> 
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center ">
+      <img class="hero-imagen rounded-circle img-fluid" src="{% static 'img/WebDev.jpg' %}" width="400" alt="Imagen de presentacion" >
+      <h1>Hola, soy Rafael Zuleta</h1>
+      <h2>Desarrollador web fullstack</h2>
+    </div>
+
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="{% static 'img/hero-inferior.png' %}" alt="Computador con codigos de programacion" >
+    </div>
+  </section>
+
+  <!-- Seccion Sobre mí -->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conóceme</h2>
+      <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mauris nibh. Etiam gravida ligula dui, in consequat arcu tempor rutrum. Donec placerat finibus felis, non tempor justo blandit non. Donec tempor eleifend venenatis. Etiam auctor non tortor non euismod. Vestibulum non tellus ultrices, semper mi et, feugiat arcu. Etiam pulvinar mi orci, tempor sollicitudin tellus sodales ut. Aenean finibus, nisi vitae elementum viverra, massa mi tincidunt nisi, et auctor ex quam eu lectus. Vestibulum blandit facilisis nulla sollicitudin semper. Etiam tristique tortor sit amet dui vehicula aliquet.</p>
+
+    </div>
+
+  </section>
+
+  <!-- Experiencia -->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+  <!-- Desarrollo web -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-pc-display" ></i>
+          <p class="experiencia-titulo">Desarrollo Web</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mauris nibh. Etiam gravida ligula dui, in consequat arcu tempor rutrum. Donec placerat finibus felis, non tempor justo blandit non. Donec tempor eleifend venenatis. Etiam auctor non tortor non euismod. </p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Html</span>
+            <span class="badge text-bg-primary">Css</span>
+            <span class="badge text-bg-primary">JavaScript</span>
+            <span class="badge text-bg-primary">Django</span>
+            <span class="badge text-bg-primary">Python</span>
+          </div>
+        </div>
+  <!-- Articulos -->
+  <div class="columna col-12 col-md-4">
+    <i class="bi bi-envelope-paper-fill"></i>
+    <p class="experiencia-titulo">Articulos</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mauris nibh. Etiam gravida ligula dui, in consequat arcu tempor rutrum. Donec placerat finibus felis, non tempor justo blandit non. Donec tempor eleifend venenatis. Etiam auctor non tortor non euismod. </p>
+    <div class="badges-contenedor">
+      <span class="badge text-bg-primary">Crear</span>
+      <span class="badge text-bg-primary">Escribir</span>
+      <span class="badge text-bg-primary">Publicar</span>
+      <span class="badge text-bg-primary">Pensar</span>
+    </div>
+  </div>
+  <!-- Estudiante -->
+  <div class="columna col-12 col-md-4">
+    <i class="bi bi-book"></i>
+    <p class="experiencia-titulo">Estudiante</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mauris nibh. Etiam gravida ligula dui, in consequat arcu tempor rutrum. Donec placerat finibus felis, non tempor justo blandit non. Donec tempor eleifend venenatis. Etiam auctor non tortor non euismod. </p>
+    <div class="badges-contenedor">
+      <span class="badge text-bg-primary">Python</span>
+      <span class="badge text-bg-primary">Autodidacta</span>
+      <span class="badge text-bg-primary">Mejora continua</span>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+  <!-- Seccion de Proyectos -->
+  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <h2 class="seccion-titulo texto-negro" >Proyectos</h2>
+    <h3 class="seccion-descripcion" >Estos son algunos proyectos</h3>
+
+    <!-- Galeria de proyectos -->
+    <div class="container text-center proyecto-contenedor">
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyectos">
+            <img src="{% static 'img/proyecto 1.avif' %}" alt="proyecto 1">
+            <div class="overlay">
+              <p>Proyecto 1</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.chuzos.com.co" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-browser-chrome"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyectos">
+            <img src="{% static 'img/proyecto2.jpg' %}" alt="proyecto 2">
+            <div class="overlay">
+              <p>Proyecto 2</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.chuzos.com.co" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-browser-chrome"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyectos">
+            <img src="{% static 'img/proyecto3.avif' %}" alt="proyecto 3">
+            <div class="overlay">
+              <p>Proyecto 3</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.chuzos.com.co" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-browser-chrome"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyectos">
+            <img src="{% static 'img/proyecto4.avif' %}" alt="proyecto 4">
+            <div class="overlay">
+              <p>Proyecto 4</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.chuzos.com.co" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-browser-chrome"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyectos">
+            <img src="{% static 'img/proyecto5.avif' %}" alt="proyecto 5">
+            <div class="overlay">
+              <p>Proyecto 5</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.chuzos.com.co" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-browser-chrome"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyectos">
+            <img src="{% static 'img/proyecto6.jpg' %}" alt="proyecto 6">
+            <div class="overlay">
+              <p>Proyecto 6</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.chuzos.com.co" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-browser-chrome"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver más
+        <i class="bi bi-arrow-right-circle"></i>
+      </button>
+    </a>
+  </section>
+
+
+  <!-- Seccion de Articulos -->
+  <section class="articulos justify-content-start" >
+    <h2 class="seccion-titulo texto-negro" >Articulos</h2>
+    <div class="card" >
+      <div class="card-header">
+        Recientes
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><li class="list-group-item">An item</li></a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><li class="list-group-item">A second item</li></a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><li class="list-group-item">A third item</li></a>
+      </ul>
+    </div>
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver más articulos
+        <i class="bi bi-arrow-right-circle"></i>
+      </button>
+    </a>
+
+  </section>
+
+  <!-- Seccion de Testimonios -->
+  <section id="testimonios" class="testimonios seccion-clara" >
+    <h2 class="seccion-titulo" >Testimonios</h2>
+    <h3 class="seccion-descripcion" >Estos son algunos testimonios de mis clientes.</h3>
+
+    <!-- Seccion de carrusel -->
+
+      <div id="testimonio-carrusel" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#testimonio-carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#testimonio-carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#testimonio-carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <img src="{% static 'img/testimonio.jpg' %}" class=" testimonio-imagen rounded-circle d-block" alt="testimonio 1">
+          <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mauris nibh. Etiam gravida ligula dui, in consequat arcu tempor rutrum. Donec placerat finibus felis, non tempor justo blandit non. Donec tempor eleifend venenatis. Etiam auctor non tortor non euismod.</p>
+          <div class="testimonio-info carousel-caption  d-md-block">
+            <p class="testimonio-nombre texto-negro">Rafael Zuleta</p>
+            <p class="testimonio-cargo texto-negro">Desarrollador Web</p>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="{% static 'img/testimonio.jpg' %}" class=" testimonio-imagen rounded-circle d-block" alt="testimonio 2">
+          <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mauris nibh. Etiam gravida ligula dui, in consequat arcu tempor rutrum. Donec placerat finibus felis, non tempor justo blandit non. Donec tempor eleifend venenatis. Etiam auctor non tortor non euismod.</p>
+          <div class="testimonio-info carousel-caption d-md-block">
+            <p class="testimonio-nombre texto-negro">Libardo Zuleta</p>
+            <p class="testimonio-cargo texto-negro">Desarrollador Web</p>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="{% static 'img/testimonio.jpg' %}" class=" testimonio-imagen rounded-circle d-block" alt="testimonio 3">
+          <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mauris nibh. Etiam gravida ligula dui, in consequat arcu tempor rutrum. Donec placerat finibus felis, non tempor justo blandit non. Donec tempor eleifend venenatis. Etiam auctor non tortor non euismod.</p>
+          <div class="testimonio-info carousel-caption d-md-block">
+            <p class="testimonio-nombre texto-negro">Alejandro Zuleta</p>
+            <p class="testimonio-cargo texto-negro">Desarrollador Web</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonio-carrusel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon texto" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonio-carrusel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  </section>
+
+  <!-- Seccion de contacto -->
+  <section id="contacto" class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container rectangulo text-center d-flex justify-content-center">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            !Hablemos¡
+          </div>
+          <div class="col-12 col-md-4 desc">
+            Contactame para un proyecto de desarrollo web y haré que tu vision se haga realidad.
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:ra821710017@gmail.com">
+              <button type="button">
+                Contactar
+                <i class="bi bi-envelope-check"></i>
+              </button>
+
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="logo-pagina" src="{% static 'img/logo-sf.jpg' %}" alt="Logo del proyecto">
+    <p class="footer-text texto-center">Aprendo y creo todos los días<br>Contactame</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Rafael ZUleta - 2023 &#169;</div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
